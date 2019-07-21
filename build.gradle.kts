@@ -31,7 +31,9 @@ dependencies {
   implementation("org.springframework.boot:spring-boot-starter-mustache")
   implementation("org.springframework.boot:spring-boot-starter-web")
   implementation("org.springframework.boot:spring-boot-starter-web-services")
-  
+
+  implementation("org.springframework.amqp:spring-rabbit:2.1.7.RELEASE")
+
   implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
 
   implementation("io.springfox:springfox-swagger2:2.9.2")

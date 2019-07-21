@@ -21,6 +21,14 @@ class IclientApplication {
     return CommandLineRunner{ args ->
       doSoupRequest(soupCountryClient)
       doHttpRequest(myFeignClient)
+      doRabbitMqMessageWait()
+    }
+  }
+
+  private fun doRabbitMqMessageWait() {
+    while (true) {
+      Thread.sleep(5000)
+//      println("Waiting for the messages from a queue")
     }
   }
 
