@@ -1,6 +1,5 @@
 package com.alekseysamoylov.iclient
 
-import java.time.LocalDateTime
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
 import javax.persistence.Id
@@ -14,7 +13,6 @@ data class Article(
     var content: String = "",
     @ManyToOne var author: User,
     var slug: String = title.toSlug(),
-    var addedAt: LocalDateTime = LocalDateTime.now(),
     @Id @GeneratedValue var id: Long? = null)
 
 @Entity
